@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="img/logo4.png" type="image/png">
+  <title>Aurora Expedições - Viagens para conhecer a Aurora Boreal</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      padding: 60px 0;
+
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .carousel-control-prev-icon {
+      border: solid black;
+      border-width: 0 4px 4px 0;
+      display: inline-block;
+      padding: 5px;
+      transform: rotate(135deg);
+    }
+
+    .carousel-control-next-icon {
+      border: solid black;
+      border-width: 0 4px 4px 0;
+      display: inline-block;
+      padding: 5px;
+      transform: rotate(-45deg);
+      top: 70%;
+    }
+
+    h2 {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    h4 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    h5 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    h6 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    p {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NavBar-->
+  <nav class="navbar navbar-expand-lg  fixed-top ">
+    <div class="container justify-content-center">
+
+      <img src="img/logo4.png" alt="Logo" width="100" height="80" class="d-inline-block align-text-top me-2">
+      <a class="navbar-brand mx-auto " href="#">AURORA EXPEDIÇÕES</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#sobre">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-black" aria-current="page" href="#destinos">Destinos</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-black" aria-current="page" href="#equipe">Equipe</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#depoimentos">Depoimentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/no.jpg" class="d-block w-100" style="max-height: 500px; object-fit: cover;" alt="Carrosel 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>NORUEGA</h5>
+          <p></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/su.jpg" class="d-block w-100" style="max-height: 500px; object-fit: cover;" alt="Carrosel 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>SUÉCIA</h5>
+          <p></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/svalbard.jpg" class="d-block w-100" style="max-height: 500px; object-fit: cover;"
+          alt="Carrosel 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>SVALBARD</h5>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div><br>
+
+  <!-- SOBRE -->
+  <section class="bg-light" id="sobre">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>SOBRE NÓS</h2>
+          <p>Nós da Aurora Expedições somos uma empresa especializada em realizar viagens para países que acontece o
+            famoso fenômeno aurora boreal.
+            Nosso trabalho é sempre proporcionar o melhor para os nossos clientes realizando sonhos, memórias e momentos
+            inesquecíveis.
+          </p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="img/ab.jpg" class="img-fluid rounded shadow" alt="foto">
+        </div>
+      </div>
+    </div><br><br>
+
+    <!-- DESTINOS-->
+    <h2 class="text-center my-4" id="destinos">DESTINOS</h2>
+    <h5 align="center">Nós oferecemos 6 países para estarem conhecendo a Aurora Boreal</h5>
+    <div id="carouselDestinos" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+
+            <!-- Alasca -->
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 shadow-sm">
+                <img src="img/alasca.webp" class="card-img-top" alt="Aurora Boreal no Alasca">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">ALASCA</h4>
+                  <h5 class="text-end"><span class="badge bg-secondary">7 dias e 6 noites</span></h5>
+                  <h6 class="text-end">A partir de</h6>
+                  <h5 class="text-end">R$13.396</h5>
+                  <a href="#" class="btn btn-outline-secondary mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Saiba
+                    Mais</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Suécia -->
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 shadow-sm">
+                <img src="img/su.jpg" class="card-img-top" alt="Aurora Boreal na Suécia">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">SUÉCIA</h4>
+                  <h5 class="text-end"><span class="badge bg-secondary">9 dias e 8 noites</span></h5>
+                  <h6 class="text-end">A partir de</h6>
+                  <h5 class="text-end">R$43.858</h5>
+                  <a href="#" class="btn btn-outline-secondary mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Saiba
+                    Mais</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Noruega -->
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 shadow-sm">
+                <img src="img/no.jpg" class="card-img-top" alt="Aurora Boreal na Noruega">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">NORUEGA</h4>
+                  <h5 class="text-end"><span class="badge bg-secondary">7 dias e 6 noites</span></h5>
+                  <h6 class="text-end">A partir de</h6>
+                  <h5 class="text-end">R$21.243</h5>
+                  <a href="#" class="btn btn-outline-secondary mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Saiba
+                    Mais</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+
+            <!-- Islândia -->
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 shadow-sm">
+                <img src="img/is.jpg" class="card-img-top" alt="Aurora Boreal na Islândia">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">ISLÂNDIA</h4>
+                  <h5 class="text-end"><span class="badge bg-secondary">7 dias e 6 noites</span></h5>
+                  <h6 class="text-end">A partir de</h6>
+                  <h5 class="text-end">R$19.673</h5>
+                  <a href="#" class="btn btn-outline-secondary mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Saiba
+                    Mais</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Svalbard -->
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 shadow-sm">
+                <img src="img/svalbard.jpg" class="card-img-top" alt="Aurora Boreal em Svalbard">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">SVALBARD</h4>
+                  <h5 class="text-end"><span class="badge bg-secondary">8 dias e 7 noites</span></h5>
+                  <h6 class="text-end">A partir de</h6>
+                  <h5 class="text-end">R$23.257</h5>
+                  <a href="#" class="btn btn-outline-secondary mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Saiba
+                    Mais</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Groenlândia -->
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 shadow-sm">
+                <img src="img/groe.jpg" class="card-img-top" alt="Aurora Boreal na Groenlândia">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">GROENLÂNDIA</h4>
+                  <h5 class="text-end"><span class="badge bg-secondary">7 dias e 6 noites</span></h5>
+                  <h6 class="text-end">A partir de</h6>
+                  <h5 class="text-end">R$19.860</h5>
+                  <a href="#" class="btn btn-outline-secondary mt-2"><i class="bi bi-arrow-right-circle-fill"></i> Saiba
+                    Mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestinos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselDestinos" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div><br><br>
+
+    <!-- Equipe -->
+    <div class="container">
+      <h2 class="text-center mb-4" id="equipe">EQUIPE</h2>
+      <div class="row g-4">
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="img/ana.jpg" class="card-img-top" alt="Ana Clara">
+            <div class="card-body">
+              <h5 class="card-title">Ana Clara</h5>
+              <p class="card-text">Agente de Viagem</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="img/joao.jpg" class="card-img-top" alt="João Silva">
+            <div class="card-body">
+              <h5 class="card-title">João Silva</h5>
+              <p class="card-text">Operador de Turismo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="img/roberto.jpg" class="card-img-top" alt="Roberto Costa">
+            <div class="card-body">
+              <h5 class="card-title">Roberto Costa</h5>
+              <p class="card-text">Marketing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="img/mari.jpg" class="card-img-top" alt="Mariana Lima">
+            <div class="card-body">
+              <h5 class="card-title">Mariana Lima</h5>
+              <p class="card-text">Gestora de Hotelaria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+
+    <!--Depoimentos -->
+    <div class="container">
+      <h2 class="text-center mb-4" id="depoimentos">DEPOIMENTOS</h2>
+
+      <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+
+          <div class="carousel-item active">
+            <p class="fs-5">"Experiência incrível! Ver a aurora boreal foi um sonho realizado."</p>
+            <h6 class="mt-3">— Ricardo Martins</h6>
+          </div>
+
+          <div class="carousel-item">
+            <p class="fs-5">"Atendimento impecável e roteiro perfeito. Recomendo!"</p>
+            <h6 class="mt-3">— Marina Pereira</h6>
+          </div>
+
+          <div class="carousel-item">
+            <p class="fs-5">"Nunca imaginei que uma viagem pudesse ser tão bem organizada."</p>
+            <h6 class="mt-3">— Lucia Moreira</h6>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+
+        <div class="carousel-indicators mt-3">
+          <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="0" class="active"
+            aria-current="true"></button>
+          <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="2"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container text-center text-md-start">
+      <div class="row align-items-center" id="contato">
+
+        <div class="col-md-4 mb-4">
+          <img src="img/logo5.png" alt="Aurora" width="130" height="80">
+          <div class="mt-3">
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <h6>CONTATOS:</h6>
+          <p class="mb-1">+55 (44) 8423-1953</p>
+          <p>contato@auroraexpedicoes.com.br</p>
+        </div>
+
+        <div class="col-md-4 mb-4 text-md-end">
+          <p class="mb-1">CÂMBIO - Cotação 11/09/2025</p>
+          <p class="mb-0">Dólar R$ 5,39 | Euro R$ 6,33</p>
+        </div>
+      </div>
+
+      <hr class="border-light">
+
+      <div class="text-center">
+        <p class="mb-0">Aurora Expedições - Todos os Direitos Reservados - 2025</p>
+        <p class="mb-0"><a href="#" class="text-white text-decoration-none">POLÍTICA DE PRIVACIDADE | AURORA</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
